@@ -34,7 +34,7 @@ header("Demo 1: VQE — Finding H₂ Ground State Energy")
 # ═══════════════════════════════════════════════════════════════════
 
 print(f"""
-{DIM}// Nova source:{RESET}
+{DIM}// Synaphe source:{RESET}
 {CYAN}let H = hamiltonian("H2", basis="sto-3g", bondlength=0.735)
 
 @differentiable
@@ -74,7 +74,7 @@ header("Demo 2: Linear Type Safety — No-Cloning Enforcement")
 # ═══════════════════════════════════════════════════════════════════
 
 print(f"""
-{DIM}// Nova source (this should ERROR):{RESET}
+{DIM}// Synaphe source (this should ERROR):{RESET}
 {CYAN}let q = qregister(4)
 let result1 = measure(q)   // OK — consumes q
 let result2 = hadamard(q)  // ERROR — q already consumed!{RESET}
@@ -98,7 +98,7 @@ header("Demo 3: Parameter Shift Rule — Quantum Autodiff")
 # ═══════════════════════════════════════════════════════════════════
 
 print(f"""
-{DIM}// Nova source:{RESET}
+{DIM}// Synaphe source:{RESET}
 {CYAN}@differentiable
 fn circuit(theta: Float) -> Float {{
     qubit() |> ry(theta) |> measure |> expectation(PauliZ)
@@ -130,7 +130,7 @@ header("Demo 4: Pipeline Operator in Action")
 # ═══════════════════════════════════════════════════════════════════
 
 print(f"""
-{DIM}// Nova source:{RESET}
+{DIM}// Synaphe source:{RESET}
 {CYAN}let data = [3, 1, 4, 1, 5, 9, 2, 6]
 let result = data |> sorted |> reversed |> list{RESET}
 """)
@@ -148,7 +148,7 @@ header("Demo 5: Quantum Pipeline — Bell State")
 # ═══════════════════════════════════════════════════════════════════
 
 print(f"""
-{DIM}// Nova source:{RESET}
+{DIM}// Synaphe source:{RESET}
 {CYAN}let bell = qregister(2) |> hadamard |> cx(0, 1) |> measure{RESET}
 """)
 
@@ -176,7 +176,7 @@ header("Demo 6: QAOA — Optimization")
 # ═══════════════════════════════════════════════════════════════════
 
 print(f"""
-{DIM}// Nova source:{RESET}
+{DIM}// Synaphe source:{RESET}
 {CYAN}let result = qaoa(
     cost = my_cost_fn,
     qubits = 4,
