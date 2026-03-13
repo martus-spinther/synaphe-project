@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/martus-spinther/synaphe-project/main/banner.svg" alt="Synaphe — The bridge between AI and quantum computing" width="100%">
+<img src="https://raw.githubusercontent.com/martus-spinther/synaphe-project/main/synaphe_readme_hero_banner.svg" alt="Synaphe — The bridge between AI and quantum computing" width="100%">
 <p align="center">
   <h1 align="center">Synaphe</h1>
   <p align="center">
