@@ -31,7 +31,7 @@ Today, building a hybrid quantum-classical ML workflow requires juggling Python,
 
 ```bash
 # Clone the repository
-git clone https://github.com/martus-spinther/synaphe.git
+git clone https://github.com/martus-spinther/synaphe-project.git
 cd synaphe
 
 # Run the interactive demo
