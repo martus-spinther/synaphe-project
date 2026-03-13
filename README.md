@@ -1,4 +1,7 @@
 <p align="center">
+  <img src="banner.svg" alt="Synaphe — The bridge between AI and quantum computing" width="100%">
+</p>
+<p align="center">
   <h1 align="center">Synaphe</h1>
   <p align="center">
     <em>A programming language for hybrid AI and quantum computing</em>
